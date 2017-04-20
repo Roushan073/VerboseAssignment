@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_select_buyer_seller"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:background="#2637bc">
+
+            <ImageView
+                android:id="@+id/select_img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/quickdeal_a"
+                android:layout_centerInParent="true" />
+
+            <ImageView
+                android:layout_below="@+id/select_img"
+                android:layout_width="190dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/quickdeal_b"
+                android:layout_centerInParent="true" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bck"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I AM A ..."
+                android:layout_gravity="center_horizontal"
+                android:textSize="30dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:layout_marginTop="30dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="30dp"
+                    android:id="@+id/btn_select_buyer"
+                    android:layout_width="140dp"
+                    android:background="@drawable/round_button"
+                    android:layout_height="wrap_content"
+                    android:text="BUYER"/>
+
+                <Button
+                    android:id="@+id/btn_select_seller"
+                    android:layout_width="140dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/round_button"
+                    android:layout_height="wrap_content"
+                    android:text="Seller"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

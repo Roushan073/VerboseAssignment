@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="#2637bc"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/nav_header_buyer_img1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="80dp"
+            android:src="@drawable/quickdeal_a"/>
+
+        <ImageView
+            android:id="@+id/nav_header_buyer_img2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/quickdeal_b"
+            android:layout_weight="0.34"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="15dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/nav_header_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Roushan Kumar"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="35dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"/>
+
+</LinearLayout>
