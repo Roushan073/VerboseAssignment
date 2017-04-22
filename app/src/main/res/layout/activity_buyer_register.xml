@@ -1,111 +1,155 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/activity_buyer_register"
-    android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="match_parent"
+    android:layout_width="match_parent"
     android:background="#ffffff">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Register Buyer"
-        android:textSize="30dp"
-        android:layout_marginTop="30dp"
-        android:layout_gravity="center_horizontal"/>
-
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/layout_buyer_first_name"
+    <LinearLayout
+        android:id="@+id/activity_buyer_register"
         android:layout_width="match_parent"
+        android:orientation="vertical"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp">
-
-        <EditText
-            android:id="@+id/et_buyer_first_name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="20dp"
-            android:inputType="textPersonName"
-            android:hint="Enter First Name"/>
-
-    </android.support.design.widget.TextInputLayout>
-
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/layout_buyer_last_name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp">
-
-        <EditText
-            android:id="@+id/et_buyer_last_name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="20dp"
-            android:inputType="textPersonName"
-            android:hint="Enter Last Name"/>
-
-    </android.support.design.widget.TextInputLayout>
-
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/layout_buyer_mob"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp">
-
-        <EditText
-            android:id="@+id/et_buyer_mob"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="20dp"
-            android:inputType="number"
-            android:hint="Enter Phone No."/>
-
-    </android.support.design.widget.TextInputLayout>
-
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/layout_buyer_add"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp">
-
-        <EditText
-            android:id="@+id/et_buyer_add"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="20dp"
-            android:inputType="textEmailAddress"
-            android:hint="Enter email"/>
-
-    </android.support.design.widget.TextInputLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp">
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="REGISTER"
-            android:layout_marginLeft="120dp"
-            android:id="@+id/btn_reg_buyer" />
+        android:background="#ffffff">
 
         <TextView
-            android:id="@+id/txt_go_back_b"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Go Back"
-            android:textSize="20dp"
-            android:layout_marginRight="25dp"
-            android:layout_marginTop="10dp"
-            android:layout_alignParentRight="true"
-            android:textColor="#002aff"/>
+            android:text="Register Buyer"
+            android:textSize="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"/>
 
-    </RelativeLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/layout_buyer_first_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
 
-</LinearLayout>
+            <EditText
+                android:id="@+id/et_buyer_first_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="20dp"
+                android:inputType="textPersonName"
+                android:hint="Enter First Name"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/layout_buyer_last_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/et_buyer_last_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="20dp"
+                android:inputType="textPersonName"
+                android:hint="Enter Last Name"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/layout_buyer_mob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/et_buyer_mob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="20dp"
+                android:inputType="number"
+                android:hint="Enter Phone No."/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/layout_buyer_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/et_buyer_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="20dp"
+                android:inputType="textEmailAddress"
+                android:hint="Enter email"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:id="@+id/tv__"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date Of Birth : "
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="32dp"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/tv_dob_buyer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="date of birth"
+                android:layout_toRightOf="@+id/tv__"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="40dp"
+                android:visibility="gone"
+                android:textSize="20dp"/>
+
+            <Button
+                android:id="@+id/btn_dob_buyer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select date"
+                android:layout_toRightOf="@+id/tv__"
+                android:layout_marginLeft="40dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="40dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="REGISTER"
+                android:background="@drawable/round_button"
+                android:layout_marginLeft="120dp"
+                android:id="@+id/btn_reg_buyer" />
+
+            <TextView
+                android:id="@+id/txt_go_back_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Go Back"
+                android:textSize="20dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentRight="true"
+                android:textColor="#002aff"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

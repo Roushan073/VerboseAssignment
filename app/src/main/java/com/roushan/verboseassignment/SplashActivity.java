@@ -20,11 +20,12 @@ public class SplashActivity extends AppCompatActivity {
         icon = (ImageView) findViewById(R.id.qd_icon);
         text = (ImageView) findViewById(R.id.qd_text);
 
-        Animation animation = AnimationUtils.loadAnimation(this, R.anim.fade_in);
-        icon.setAnimation(animation);
-        text.setAnimation(animation);
+        Animation img_animation = AnimationUtils.loadAnimation(this, R.anim.slide_in_down);
+        Animation txt_animation = AnimationUtils.loadAnimation(this, R.anim.slide_in_up);
+        icon.setAnimation(img_animation);
+        text.setAnimation(txt_animation);
 
-        animation.setAnimationListener(new Animation.AnimationListener() {
+        img_animation.setAnimationListener(new Animation.AnimationListener() {
             @Override
             public void onAnimationStart(Animation animation) {
 
@@ -34,11 +35,11 @@ public class SplashActivity extends AppCompatActivity {
             public void onAnimationEnd(Animation animation) {
                 session = new Session(SplashActivity.this);
                 if(session.checkLogin()) {     // session.checkLogin() == true
-                    startActivity(new Intent(getApplicationContext(), BuyerSellerNavActivity.class));
+                    startActivity(new Intent(SplashActivity.this, BuyerSellerNavActivity.class));
                     finish();
                 } else {
                     finish();
-                    startActivity(new Intent(getApplicationContext(), SelectBuyerSeller.class));
+                    startActivity(new Intent(SplashActivity.this, SelectBuyerSeller.class));
                 }
             }
 

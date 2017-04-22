@@ -11,6 +11,9 @@ public class Session {
     Context ctx;
     public static final String IS_USER_LOGGED_IN = "isUserLoggedIn";
     public static final String KEY_NAME = "name";
+    public static final String KEY_DAY = "day";
+    public static final String KEY_MONTH = "month";
+    public static final String KEY_YEAR = "year";
     public static final String KEY_PHONE = "phone";
     public static final String KEY_ADDRESS = "address";
 
@@ -26,10 +29,14 @@ public class Session {
         editor.commit();
     }
 
-    public void setUserDetails(String name, String phone, String address) {
+    public void setUserDetails(String name, String phone, String address,
+                               String day, String month, String year) {
         editor.putString(KEY_NAME, name);
         editor.putString(KEY_PHONE, phone);
         editor.putString(KEY_ADDRESS, address);
+        editor.putString(KEY_DAY, day);
+        editor.putString(KEY_MONTH, month);
+        editor.putString(KEY_YEAR, year);
         editor.commit();
     }
 
@@ -43,6 +50,9 @@ public class Session {
         user.put(KEY_NAME, prefs.getString(KEY_NAME, null));
         user.put(KEY_PHONE, prefs.getString(KEY_PHONE, null));
         user.put(KEY_ADDRESS, prefs.getString(KEY_ADDRESS, null));
+        user.put(KEY_DAY, prefs.getString(KEY_DAY, null));
+        user.put(KEY_MONTH, prefs.getString(KEY_MONTH, null));
+        user.put(KEY_YEAR, prefs.getString(KEY_YEAR, null));
 
         return user;
     }
