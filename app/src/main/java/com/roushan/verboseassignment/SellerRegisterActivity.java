@@ -61,7 +61,7 @@ public class SellerRegisterActivity extends AppCompatActivity {
                 seller_address = add.getText().toString();
                 seller_phone = mob.getText().toString();
 
-                if(!seller_name.equals("") && !seller_address.equals("") && !seller_phone.equals("")) {
+                if(!f.equals("") && !l.equals("") && !seller_address.equals("") && !seller_phone.equals("")) {
                     if(dob_tv.getVisibility() == View.GONE) {
                         Toast.makeText(SellerRegisterActivity.this, "Select Date of Birth",
                                 Toast.LENGTH_SHORT).show();
